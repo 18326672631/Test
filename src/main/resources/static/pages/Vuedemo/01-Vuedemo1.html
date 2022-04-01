@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../../js/vue.js"></script>
+
+<div id="app">
+    <input name="username" v-model="username">
+    {{username}}
+
+</div>
+<script>
+    new Vue({
+        /**
+         *      v-model  :   在表单元素上创建双向数据绑定
+         *
+         */
+        //element,给那个区域的代码用Vue控制
+        el:"#app",
+ /*       data:function (){
+            return{
+
+            }
+        }
+        */
+        //简化书写
+        data(){
+            //返回对应的模型数据
+            return{
+                //json
+                username:""
+            }
+
+        }
+
+    })
+
+</script>
+
+
+</body>
+</html>

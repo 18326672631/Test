@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns: xmlns:
+      xmlns: xmlns: xmlns: xmlns:v-if="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-for="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+
+
+    <div v-for="city in citys">
+    {{city}}  <br>
+    </div>
+
+    <hr>
+<!--    加索引   -->
+    <div v-for="(city,i) in citys">
+        {{i+1}}:{{city}} <br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+    new Vue({
+        /*
+        *  v-for  遍历
+        * */
+
+        el:"#app",
+
+        data(){
+
+            return{
+
+                username:"",
+                url:"https://www.baidu.com",
+                count:4,
+                citys:["北京","上海","广州","深圳"]
+            }
+
+        },
+        methods:{
+
+            show(){
+                alert("你好");
+            }
+        }
+
+    })
+
+</script>
+
+
+</body>
+</html>

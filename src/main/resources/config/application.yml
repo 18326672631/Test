@@ -1,0 +1,24 @@
+server:
+  port: 8084
+  #优先级高于外面的配置文件 配置为两者相加
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/user
+#      username: root
+#      password: root
+#
+#
+#
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      id-type: auto
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#
+##log   ?????????????
+
+
+

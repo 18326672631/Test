@@ -1,0 +1,24 @@
+server:
+  port: 8086
+  #此文件优先级最高，存放于jar文件相同目录下
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/user
+#      username: root
+#      password: root
+#
+#
+#
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      id-type: auto
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#
+##log   ?????????????
+
+
+

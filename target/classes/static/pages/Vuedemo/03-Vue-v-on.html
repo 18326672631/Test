@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns: xmlns:
+      xmlns: xmlns: xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+
+
+    <input type="button" value="按钮"   v-on:click="show()">
+    <hr>
+<!--    简化书写-->
+    <input type="button" value="按钮1"    @click=show()>
+
+
+
+</div>
+<script>
+    new Vue({
+        /*
+        *          v-on :  为html标签绑定事件
+        *
+        * */
+
+        el:"#app",
+
+        data(){
+
+            return{
+
+                username:"",
+                url:"https://www.baidu.com",
+            }
+
+        },
+        methods:{
+
+            show(){
+                alert("你好");
+            }
+        }
+
+    })
+
+</script>
+
+
+</body>
+</html>
